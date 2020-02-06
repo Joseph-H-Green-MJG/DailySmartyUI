@@ -1,6 +1,4 @@
-.post-topic {
-    margin: 0 4px;
-}
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -16,7 +14,7 @@ body {
     width: 66vw;
     display: grid;
     align-content: space-around;
-    justify-content: stretch;
+    // justify-items: stretch;
     // grid-template-rows: 1fr 2fr 1fr;
 }
 
@@ -35,7 +33,8 @@ ul {
 
 $color-gray-one: #666666;
 $color-gray-two: #B3B3B3;
-$color-blue-one: #0079ff;
+$color-blue-one: #0079FF;
 
 @import './searchBar';
 @import './recentPosts';
+@import './post';

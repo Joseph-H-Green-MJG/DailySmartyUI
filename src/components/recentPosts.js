@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { connect } from "react-redux";
 
-import * as action from "../actions";
+import * as actions from "../actions";
 
 import Post from "./post";
 
@@ -14,7 +14,7 @@ class RecentPosts extends Component {
   renderPosts = function() {
     const posts = this.props.recentPosts.map((post, index) => {
       if (index < 3) {
-        return <Post {...post} key={index} />;
+        return <Post type="recent" {...post} key={index} />;
       }
     });
     return posts;
@@ -38,4 +38,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps, action)(RecentPosts);
+export default connect(mapStateToProps, actions)(RecentPosts);
